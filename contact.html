@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | LegalEdge Corporate & Digital Portfolio</title>
+    <style>
+        :root {
+            --primary: #0A2540;
+            --accent: #00D4B2;
+            --bg-light: #F8F9FA;
+            --text-dark: #1C2434;
+            --text-muted: #64748B;
+            --blue-link: #0066CC;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: var(--bg-light); color: var(--text-dark); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        header { background: #ffffff; padding: 20px 0; border-bottom: 1px solid #E2E8F0; position: sticky; top: 0; z-index: 100; }
+        .header-flex { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.6rem; font-weight: 800; color: var(--primary); text-decoration: none; }
+        .logo span { color: var(--accent); }
+        nav a { text-decoration: none; color: var(--text-dark); font-weight: 600; margin-left: 25px; font-size: 0.95rem; }
+        .btn-nav { background-color: var(--primary); color: #ffffff !important; padding: 10px 20px; border-radius: 6px; }
+
+        .page-title-section { padding: 60px 0; background: linear-gradient(180deg, #eff4f9 0%, var(--bg-light) 100%); text-align: center; border-bottom: 1px solid #E2E8F0; }
+        .page-title-section h1 { font-size: 2.8rem; color: var(--primary); font-weight: 800; margin-bottom: 15px; }
+        .page-title-section p { font-size: 1.2rem; color: var(--text-muted); max-width: 700px; margin: 0 auto; }
+
+        .services-grid { display: grid; grid-template-columns: 1fr; gap: 40px; padding: 60px 0; }
+        .detailed-service-card { background: #ffffff; border: 1px solid #E2E8F0; border-radius: 8px; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.02); }
+        .card-header { border-bottom: 2px solid var(--bg-light); padding-bottom: 20px; margin-bottom: 25px; }
+        .card-header h2 { font-size: 1.8rem; color: var(--primary); font-weight: 700; display: flex; align-items: center; gap: 12px; }
+        .card-header .badge { background: #e0fcf7; color: #007d68; font-size: 0.8rem; font-weight: 700; padding: 4px 12px; border-radius: 50px; text-transform: uppercase; letter-spacing: 0.5px; }
+        
+        .service-features-flex { display: flex; gap: 40px; }
+        .feature-main-desc { width: 40%; font-size: 1.05rem; color: var(--text-muted); }
+        .feature-detailed-list { width: 60%; list-style: none; }
+        .feature-detailed-list li { background: var(--bg-light); padding: 20px; border-radius: 6px; margin-bottom: 15px; border-left: 4px solid var(--primary); }
+        .feature-detailed-list li strong { display: block; font-size: 1.1rem; color: var(--primary); margin-bottom: 5px; }
+        .feature-detailed-list li p { font-size: 0.95rem; color: #475569; }
+
+        .cta-box { background: var(--primary); color: #ffffff; padding: 50px; border-radius: 8px; text-align: center; margin-bottom: 60px; }
+        .cta-box h3 { font-size: 2rem; margin-bottom: 15px; font-weight: 700; }
+        .cta-box p { font-size: 1.1rem; margin-bottom: 30px; color: #cbd5e1; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .btn-cta { display: inline-block; background-color: var(--accent); color: var(--primary); font-weight: 700; padding: 15px 40px; text-decoration: none; border-radius: 6px; font-size: 1.05rem; }
+
+        footer { background-color: var(--primary); color: #ffffff; padding: 40px 0; text-align: center; font-size: 0.95rem; }
+
+        @media (max-width: 900px) {
+            .service-features-flex { flex-direction: column; gap: 20px; }
+            .feature-main-desc, .feature-detailed-list { width: 100%; }
+            .page-title-section h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-flex">
+            <a href="index.html" class="logo">Legal<span>Edge</span></a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="service.html" style="color: var(--accent);">Our Services</a>
+                <a href="tel:+919930016161" class="btn-nav">📞 Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-title-section">
+        <div class="container">
+            <h1>Comprehensive Service Catalog</h1>
+            <p>Explore our multi-tier institutional frameworks designed to ensure ironclad statutory legal compliance and high-performance digital client acquisition pipelines.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="services-grid">
+            
+            <div class="detailed-service-card">
+                <div class="card-header">
+                    <h2>🏢 Corporate Incorporations & Legal Formations <span class="badge">Structural</span></h2>
+                </div>
+                <div class="service-features-flex">
+                    <div class="feature-main-desc">
+                        <p>We handle the complete administrative red tape to formally structure your legal entity, protecting your assets and establishing valid operations with state and central governing authorities.</p>
+                    </div>
+                    <ul class="feature-detailed-list">
+                        <li>
+                            <strong>MSME / Udyam Registration</strong>
+                            <p>Formal government onboarding to unlock priority sector lending schemes, capital subsidies, and strict statutory protection against delayed commercial payments.</p>
+                        </li>
+                        <li>
+                            <strong>LLC & Private Limited Formation</strong>
+                            <p>End-to-end documentation drafting, including Memorandum of Association (MOA), Articles of Association (AOA), and Director Identification numbers for total liability isolation.</p>
+                        </li>
+                        <li>
+                            <strong>Shop & Establishment Licensing</strong>
+                            <p>Securing legal physical operation compliance certificate fields for local municipal departments to prevent administrative penalties.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="detailed-service-card">
+                <div class="card-header">
+                    <h2>💎 Indirect Taxation & Compliance Architecture <span class="badge">Tax & Audit</span></h2>
+                </div>
+                <div class="service-features-flex">
+                    <div class="feature-main-desc">
+                        <p>Systemic handling of high-volume financial transactions to protect your accounting frameworks and ensure your books remain strictly audit-ready month after month.</p>
+                    </div>
+                    <ul class="feature-detailed-list">
+                        <li>
+                            <strong>GST Setup & Implementation</strong>
+                            <p>Securing tax identification registration files across correct business categories seamlessly to initialize vendor transaction operations.</p>
+                        </li>
+                        <li>
+                            <strong>Structured Monthly/Quarterly Filings</strong>
+                            <p>Precision ledger balancing and direct submission profiles for GSTR-1 (sales profiles) and GSTR-3B (tax payments) to completely clear operational liabilities.</p>
+                        </li>
+                        <li>
+                            <strong>Input Tax Credit (ITC) Optimization</strong>
+                            <p>In-depth structural audits of business purchase invoices to legally minimize outward tax payouts and safely process eligible state tax refunds.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="detailed-service-card">
+                <div class="card-header">
+                    <h2>🚀 Media Acquisition & Performance Ads <span class="badge">Digital Growth</span></h2>
+                </div>
+                <div class="service-features-flex">
+                    <div class="feature-main-desc">
+                        <p>Deploying advanced high-conversion acquisition infrastructure across global search and media networks to direct active buying intent straight to your booking platforms.</p>
+                    </div>
+                    <ul class="feature-detailed-list">
+                        <li>
+                            <strong>Meta & Instagram Intent Funnels</strong>
+                            <p>Data-centric customer targeting models matching demographic demand patterns with rich creatives to extract high-value client parameters consistently.</p>
+                        </li>
+                        <li>
+                            <strong>Google Search Performance Optimization</strong>
+                            <p>Real-time keyword bidding deployment to secure front-page premium positioning when prospective clients actively seek corporate formations online.</p>
+                        </li>
+                        <li>
+                            <strong>Ad Spend Optimization Algorithms</strong>
+                            <p>Continuous multivariate split-testing metrics to lower customer acquisition costs (CAC) while scaling operational conversion volume parameters.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="cta-box">
+            <h3>Need a Custom Compliance and Digital Blueprint?</h3>
+            <p>Our specialists can architect a tailored operations deployment structure specifically aligned with your multi-state scale parameters.</p>
+            <a href="tel:+919930016161" class="btn-cta">Schedule Advisory Session</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 LegalEdge Corporate Solutions. Managed by Garima Singh. All rights protected.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
