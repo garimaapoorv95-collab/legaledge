@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>International Business Registration Services | Treksea</title>
+    <title>Our Services | Legaledge</title>
     <style>
         :root {
-            --bg-light: #F9FAFB;
-            --primary-navy: #0F2A4A;
-            --accent-orange: #E07A5F;
-            --corporate-purple: #6D597A;
-            --text-dark: #1F2937;
-            --text-muted: #4B5563;
+            --bg-pink: #FFE5EC; /* Light Pink Background */
+            --sea-blue: #0077B6; /* Sea Blue Accent */
+            --sea-blue-light: #0096C7;
+            --text-black: #000000; /* Black Text */
             --white: #FFFFFF;
         }
 
@@ -19,341 +17,275 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-black);
         }
 
         body {
-            background-color: var(--bg-light);
-            color: var(--text-dark);
+            background-color: var(--bg-pink);
             line-height: 1.6;
         }
 
-        /* Top Header Navigation */
+        /* Navbar Settings */
         nav {
             background: var(--white);
             padding: 1rem 5%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
             z-index: 1000;
         }
 
         .logo {
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             font-weight: 800;
-            color: var(--primary-navy);
+            color: var(--sea-blue);
             text-decoration: none;
         }
 
-        .logo span { color: var(--accent-orange); }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--text-dark);
-            font-weight: 600;
-            font-size: 0.9rem;
-            background: var(--accent-orange);
-            color: var(--white);
-            padding: 0.6rem 1.2rem;
-            border-radius: 4px;
+        .logo span {
+            color: var(--text-black);
         }
 
-        /* Hero Wrapper Segment */
-        .hero-section {
-            background: linear-gradient(rgba(15, 42, 74, 0.85), rgba(15, 42, 74, 0.9)), url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80');
-            background-size: cover;
-            background-position: center;
-            color: var(--white);
-            padding: 3.5rem 5%;
-            text-align: center;
-        }
-
-        .hero-section h1 {
-            font-size: 1.8rem;
-            font-weight: 800;
-            line-height: 1.3;
-            margin-bottom: 1rem;
-        }
-
-        .hero-section p {
-            font-size: 0.95rem;
-            color: #E5E7EB;
-            margin-bottom: 2rem;
-        }
-
-        /* Lead Generation Enquire Form Block */
-        .enquiry-card {
-            background: var(--accent-orange);
-            padding: 2rem 1.5rem;
-            border-radius: 8px;
-            max-width: 450px;
-            margin: -1.5rem auto 2rem auto;
-            box-shadow: 0 10px 25px rgba(224, 122, 95, 0.3);
-            color: var(--white);
-        }
-
-        .enquiry-card h3 {
-            margin-bottom: 1.2rem;
-            font-size: 1.3rem;
-            font-weight: 700;
-            text-align: center;
-        }
-
-        .form-group {
-            margin-bottom: 1rem;
-            text-align: left;
-        }
-
-        .form-group label {
-            display: block;
-            font-size: 0.8rem;
-            font-weight: 600;
-            margin-bottom: 0.3rem;
-        }
-
-        .form-group input, .form-group select {
-            width: 100%;
-            padding: 0.75rem;
-            border: none;
-            border-radius: 4px;
-            outline: none;
-            font-size: 0.9rem;
-        }
-
-        .btn-enquire {
-            width: 100%;
-            background: var(--primary-navy);
-            color: var(--white);
-            border: none;
-            padding: 0.8rem;
-            border-radius: 4px;
-            font-weight: 700;
-            font-size: 1rem;
-            cursor: pointer;
-            margin-top: 0.5rem;
-            text-transform: uppercase;
-        }
-
-        /* International Clients Grid Panel */
-        .clients-panel {
-            background: var(--corporate-purple);
-            color: var(--white);
-            padding: 2rem 5%;
-            text-align: center;
-        }
-
-        .clients-panel h2 {
-            font-size: 1.3rem;
-            margin-bottom: 1.5rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .logo-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
-        }
-
-        .logo-box {
-            background: var(--white);
-            padding: 15px;
-            border-radius: 6px;
+        .nav-links {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 70px;
-        }
-
-        .logo-box span {
-            color: var(--text-dark);
-            font-weight: 700;
-            font-size: 0.85rem;
-        }
-
-        /* Global Jurisdictions Component */
-        .global-section {
-            padding: 3rem 5%;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-
-        .section-header span {
-            color: var(--accent-orange);
-            font-size: 0.75rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .section-header h2 {
-            font-size: 1.5rem;
-            color: var(--primary-navy);
-            margin-top: 0.3rem;
-        }
-
-        .country-grid {
-            display: flex;
-            flex-direction: column;
             gap: 1.5rem;
         }
 
-        .country-card {
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            color: var(--text-black);
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--sea-blue);
+        }
+
+        /* Header Section */
+        .header-section {
+            text-align: center;
+            padding: 3rem 5%;
+            background: rgba(255, 255, 255, 0.5);
+            margin-bottom: 2rem;
+        }
+
+        .header-section h1 {
+            font-size: 2.2rem;
+            color: var(--sea-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .header-section p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Services Grid Layout */
+        .services-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 5% 4rem 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
             background: var(--white);
-            border: 1px solid #E5E7EB;
-            border-radius: 8px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--sea-blue);
+        }
+
+        .service-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #eee;
+        }
+
+        .service-content {
             padding: 1.5rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
         }
 
-        .flag-box {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
+        .service-content h3 {
+            font-size: 1.3rem;
+            color: var(--sea-blue);
+            margin-bottom: 0.8rem;
+            font-weight: 700;
         }
 
-        .country-card h3 {
-            font-size: 1.2rem;
-            color: var(--primary-navy);
-            margin-bottom: 0.5rem;
+        .service-content p {
+            font-size: 0.95rem;
+            margin-bottom: 1.2rem;
         }
 
-        .country-card p {
-            font-size: 0.9rem;
-            color: var(--text-muted);
+        /* Sub-items List for Virtual Assistant */
+        .service-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
             margin-bottom: 1rem;
         }
 
-        .btn-read-more {
-            color: var(--accent-orange);
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 0.9rem;
-        }
-
-        footer {
-            background: var(--primary-navy);
-            color: #9CA3AF;
-            text-align: center;
-            padding: 1.5rem;
+        .tag {
+            background: var(--bg-pink);
+            padding: 0.3rem 0.7rem;
+            border-radius: 20px;
             font-size: 0.8rem;
+            font-weight: 600;
         }
 
-        /* Adaptive Desktop Viewports */
-        @media (min-width: 769px) {
-            .hero-section h1 { font-size: 2.8rem; }
-            .logo-grid { grid-template-columns: repeat(4, 1fr); }
-            .country-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
-            .enquiry-card { max-width: 500px; }
+        .btn-consult {
+            display: inline-block;
+            background: var(--sea-blue);
+            color: var(--white) !important;
+            text-decoration: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-align: center;
+            width: 100%;
+            transition: background 0.3s;
+        }
+
+        .btn-consult:hover {
+            background: var(--sea-blue-light);
+        }
+
+        /* Quick Contact Bar */
+        .quick-contact {
+            background: var(--white);
+            padding: 2rem 5%;
+            text-align: center;
+            border-top: 2px solid var(--bg-pink);
+        }
+
+        .quick-contact h2 {
+            color: var(--sea-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #111111;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        footer p, footer p * {
+            color: #FFFFFF !important;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
 
+    <!-- Navigation Menu -->
     <nav>
-        <a href="index.html" class="logo">Trek<span>sea</span></a>
+        <a href="index.html" class="logo">Legal<span>edge</span></a>
         <div class="nav-links">
             <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html" class="active">Service</a>
+            <a href="blog.html">Blog</a>
+            <a href="gallery.html">Gallery</a>
         </div>
     </nav>
 
-    <section class="hero-section">
-        <h1>Looking for company registration Services</h1>
-        <p>We provide hassle-free company registration services in India, USA, UK, Mexico, Singapore, Hong Kong, Canada, Australia, UAE, and Vietnam. Our team ensures a smooth process, handling all legal requirements for your global business setup.</p>
-    </section>
+    <!-- Header Section -->
+    <header class="header-section">
+        <h1>Our Professional Services</h1>
+        <p>Expert legal registration, digital designing, and business virtual assistance tailored for your brand's growth.</p>
+    </header>
 
-    <div class="enquiry-card">
-        <h3>ENQUIRE NOW</h3>
-        <form action="#" method="POST" onsubmit="alert('Enquiry submitted successfully!'); return false;">
-            <div class="form-group">
-                <label>Full Name *</label>
-                <input type="text" required placeholder="Enter Full Name">
-            </div>
-            <div class="form-group">
-                <label>Email *</label>
-                <input type="email" required placeholder="Enter Email Address">
-            </div>
-            <div class="form-group">
-                <label>Phone Number *</label>
-                <input type="tel" required placeholder="Enter Phone Number">
-            </div>
-            <button type="submit" class="btn-enquire">Enquire Now</button>
-        </form>
-    </div>
+    <!-- Services Main Container -->
+    <main class="services-container">
 
-    <section class="clients-panel">
-        <h2>Our International Clients</h2>
-        <div class="logo-grid">
-            <div class="logo-box"><span>Rabbitian</span></div>
-            <div class="logo-box"><span>Zepham</span></div>
-            <div class="logo-box"><span>Pristine Tech</span></div>
-            <div class="logo-box"><span>GLE Group</span></div>
-            <div class="logo-box"><span>Coir Media</span></div>
-            <div class="logo-box"><span>CreativeSkill</span></div>
-            <div class="logo-box"><span>Alphanexis</span></div>
-            <div class="logo-box"><span>North Star Alpha</span></div>
-        </div>
-    </section>
-
-    <section class="global-section">
-        <div class="section-header">
-            <span>International Business Registration Service</span>
-            <h2>Expand Your Business With Our Registration Services in Different Countries</h2>
-        </div>
-
-        <div class="country-grid">
-            <div class="country-card">
-                <div class="flag-box">🇺🇸</div>
-                <h3>United States of America</h3>
-                <p>Simplified business setup services for LLCs and Corporations in the USA.</p>
-                <a href="#" class="btn-read-more">Read More</a>
-            </div>
-
-            <div class="country-card">
-                <div class="flag-box">🇬🇧</div>
-                <h3>United Kingdom</h3>
-                <p>Fast and efficient company registration in the UK with expert guidance.</p>
-                <a href="#" class="btn-read-more">Read More</a>
-            </div>
-
-            <div class="country-card">
-                <div class="flag-box">🇲🇽</div>
-                <h3>Mexico</h3>
-                <p>Comprehensive business registration solutions in Mexico.</p>
-                <a href="#" class="btn-read-more">Read More</a>
-            </div>
-
-            <div class="country-card">
-                <div class="flag-box">🇸🇬</div>
-                <h3>Singapore</h3>
-                <p>Quick and smooth company incorporation in Singapore with global framework tracks.</p>
-                <a href="#" class="btn-read-more">Read More</a>
-            </div>
-
-            <div class="country-card">
-                <div class="flag-box">🇭🇰</div>
-                <h3>Hong Kong</h3>
-                <p>Streamlined company registration services in Hong Kong.</p>
-                <a href="#" class="btn-read-more">Read More</a>
-            </div>
-
-            <div class="country-card">
-                <div class="flag-box">🇨🇦</div>
-                <h3>Canada</h3>
-                <p>Professional business registration assistance across Canada.</p>
-                <a href="#" class="btn-read-more">Read More</a>
+        <!-- Service 1: Business Registrations -->
+        <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=500&q=80" alt="Company Formation" class="service-img">
+            <div class="service-content">
+                <h3>Company Formation & Legal</h3>
+                <p>Complete support for incorporating your Private Limited, LLP, or One Person Company in India hassle-free.</p>
+                <a href="tel:9930016161" class="btn-consult">Enquire Now</a>
             </div>
         </div>
+
+        <!-- Service 2: GST Registration & Filing -->
+        <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=500&q=80" alt="GST Services" class="service-img">
+            <div class="service-content">
+                <h3>GST Services</h3>
+                <p>New GST registrations, monthly/quarterly return filings, and complete tax compliance solutions for businesses.</p>
+                <a href="tel:9930016161" class="btn-consult">Enquire Now</a>
+            </div>
+        </div>
+
+        <!-- Service 3: MSME Registration -->
+        <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=500&q=80" alt="MSME Registration" class="service-img">
+            <div class="service-content">
+                <h3>MSME / Udyam Registration</h3>
+                <p>Get your business registered under MSME to unlock government benefits, subsidies, and easy loan eligibility.</p>
+                <a href="tel:9930016161" class="btn-consult">Enquire Now</a>
+            </div>
+        </div>
+
+        <!-- Service 4: Virtual Assistant -->
+        <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1521898284481-a5ec348cb555?auto=format&fit=crop&w=500&q=80" alt="Virtual Assistant" class="service-img">
+            <div class="service-content">
+                <h3>Virtual Office Assistant</h3>
+                <p>Professional remote office assistance to handle your daily operations and design needs efficiently.</p>
+                <div class="service-tags">
+                    <span class="tag">Data Entry</span>
+                    <span class="tag">Video Editing</span>
+                    <span class="tag">Templates</span>
+                    <span class="tag">Visiting Cards</span>
+                    <span class="tag">Banners</span>
+                    <span class="tag">Thumbnails</span>
+                </div>
+                <a href="tel:9930016161" class="btn-consult">Enquire Now</a>
+            </div>
+        </div>
+
+        <!-- Service 5: Website Designing -->
+        <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=500&q=80" alt="Website Designing" class="service-img">
+            <div class="service-content">
+                <h3>Website Designing</h3>
+                <p>Stunning, clean, responsive, and mobile-friendly websites designed uniquely to showcase your business.</p>
+                <a href="tel:9930016161" class="btn-consult">Enquire Now</a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Quick Contact Details -->
+    <section class="quick-contact">
+        <h2>Have Questions? Contact Garima Singh</h2>
+        <p><strong>Phone:</strong> +91 9930016161 &nbsp;|&nbsp; <strong>Office:</strong> Virtual Office Service Available</p>
     </section>
 
+    <!-- Footer Segment -->
     <footer>
-        <p>&copy; 2026 Treksea. All Corporate Management Networks Reserved.</p>
+        <p>&copy; 2026 <a href="https://treksea.in" style="text-decoration:none;">treksea.in</a> / Legaledge. All Rights Reserved.</p>
     </footer>
 
 </body>
