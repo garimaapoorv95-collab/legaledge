@@ -3,256 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Treksea | Corporate Legal & Digital Architecture</title>
+    <title>Home | Legaledge</title>
     <style>
         :root {
-            --bg-soft-blue: #F4F7FA;      /* Premium soft corporate blue backdrop */
-            --primary-navy: #0B1B3D;      /* Deep Trust Navy */
-            --accent-blue: #0066CC;       /* Professional Action Blue */
-            --card-bg: #FFFFFF;
-            --text-dark: #1E293B;
-            --text-muted: #475569;
-            --border-color: #E2E8F0;
+            --bg-pink: #FFE5EC;
+            --sea-blue: #0077B6;
+            --sea-blue-light: #0096C7;
+            --text-black: #000000;
+            --white: #FFFFFF;
         }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-black);
         }
 
         body {
-            background-color: var(--bg-soft-blue);
-            color: var(--text-dark);
+            background-color: var(--bg-pink);
             line-height: 1.6;
-            padding: 0;
         }
 
-        /* Navbar */
         nav {
-            background-color: var(--primary-navy);
-            padding: 1.2rem 6%;
+            background: var(--white);
+            padding: 1rem 5%;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
             z-index: 1000;
         }
 
         .logo {
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             font-weight: 800;
-            color: #FFFFFF;
+            color: var(--sea-blue);
             text-decoration: none;
-            letter-spacing: -0.5px;
         }
 
-        .logo span {
-            color: #48CAE4;
-        }
-
-        .btn-nav {
-            background-color: #0066CC;
-            color: #FFFFFF;
-            padding: 0.6rem 1.2rem;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-        }
-
-        /* Main Container */
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 3rem 6%;
-        }
-
-        /* Header Sections */
-        .main-section-title {
-            font-size: 2rem;
-            color: var(--primary-navy);
-            font-weight: 800;
-            margin-top: 2rem;
-            margin-bottom: 0.5rem;
-            border-bottom: 3px solid var(--accent-blue);
-            padding-bottom: 0.5rem;
-        }
-
-        .section-desc {
-            font-size: 1.05rem;
-            color: var(--text-muted);
-            margin-bottom: 2rem;
-        }
-
-        /* Sub Category Styling */
-        .category-block {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 6px rgba(15, 27, 61, 0.03);
-        }
-
-        .category-title {
-            font-size: 1.25rem;
-            color: var(--primary-navy);
-            font-weight: 700;
-            margin-bottom: 1rem;
+        .nav-links {
             display: flex;
-            align-items: center;
-            gap: 10px;
+            gap: 1.5rem;
         }
 
-        .category-desc {
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            margin-bottom: 1.5rem;
-            background: #EBF3FC;
-            padding: 10px 15px;
-            border-radius: 6px;
-            border-left: 4px solid var(--accent-blue);
-        }
-
-        /* Custom Service List Items */
-        .service-list {
-            list-style: none;
-        }
-
-        .service-item {
-            margin-bottom: 1.2rem;
-            padding-left: 1.5rem;
-            position: relative;
-        }
-
-        .service-item::before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: var(--accent-blue);
-            font-weight: bold;
-        }
-
-        .service-item strong {
-            color: var(--primary-navy);
+        .nav-links a {
+            text-decoration: none;
             font-weight: 600;
-            display: inline-block;
-            margin-bottom: 0.2rem;
+            font-size: 1rem;
+            color: var(--text-black);
         }
 
-        .service-item p {
-            font-size: 0.95rem;
-            color: var(--text-muted);
+        .nav-links a.active {
+            color: var(--sea-blue);
         }
 
-        /* Footer */
-        footer {
-            background-color: var(--primary-navy);
-            color: #94A3B8;
+        .hero {
+            padding: 5rem 5%;
             text-align: center;
-            padding: 2.5rem 5%;
-            font-size: 0.85rem;
-            margin-top: 4rem;
+            background: rgba(255, 255, 255, 0.4);
         }
 
-        /* Mobile Adjustments */
-        @media (max-width: 768px) {
-            .main-section-title { font-size: 1.6rem; }
-            .container { padding: 2rem 5%; }
-            .category-block { padding: 1.5rem; }
+        .hero h1 {
+            font-size: 2.5rem;
+            color: var(--sea-blue);
+            margin-bottom: 1rem;
         }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem auto;
+        }
+
+        .btn-main {
+            display: inline-block;
+            background: var(--sea-blue);
+            color: var(--white) !important;
+            text-decoration: none;
+            padding: 0.8rem 2rem;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .features {
+            padding: 4rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .feat-box {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+        }
+
+        .feat-box h3 {
+            color: var(--sea-blue);
+            margin-bottom: 1rem;
+        }
+
+        .quick-contact {
+            background: var(--white);
+            padding: 2rem 5%;
+            text-align: center;
+        }
+
+        footer {
+            background: #111111;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        footer p, footer p * { color: #FFFFFF !important; }
     </style>
 </head>
 <body>
 
-    <!-- Header Navigation -->
     <nav>
-        <a href="#" class="logo">Trek<span>sea</span></a>
-        <a href="https://wa.me/" class="btn-nav">Contact Expert</a>
+        <a href="index.html" class="logo">Legaledge</a>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Service</a>
+            <a href="blog.html">Blog</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
     </nav>
 
-    <div class="container">
+    <section class="hero">
+        <h1>Your Dynamic Partner in Business Growth</h1>
+        <p>From seamless legal formations like MSME & GST to high-end website designing and creative virtual assistant services, we manage your architecture corporate framework expertly.</p>
+        <a href="service.html" class="btn-main">Explore Our Services</a>
+    </section>
 
-        <!-- SECTION 1: THE CORPORATE SERVICE PORTFOLIO -->
-        <h2 class="main-section-title">The Corporate Service Portfolio</h2>
-        <p class="section-desc">Complete structural oversight to protect your liability, maintain statutory compliance, and systematically register assets.</p>
-
-        <!-- Block 1: Incorporation & Licensing -->
-        <div class="category-block">
-            <div class="category-title">🏢 Incorporation & Licensing</div>
-            <p class="category-desc">Complete formation architecture to structure your legal entity and secure valid operation frameworks from state authorities.</p>
-            
-            <ul class="service-list">
-                <li class="service-item">
-                    <strong>MSME / Udyam Registration:</strong>
-                    <p>Access government credit mechanisms and priority legal protection against payment delays.</p>
-                </li>
-                <li class="service-item">
-                    <strong>LLC & Private Limited Formation:</strong>
-                    <p>Complete structural liability protection with comprehensive documentation oversight.</p>
-                </li>
-                <li class="service-item">
-                    <strong>Shop & Establishment Licensing:</strong>
-                    <p>Strict local statutory compliance approvals for office setups and commercial units.</p>
-                </li>
-            </ul>
+    <section class="features">
+        <div class="feat-box">
+            <h3>Legal Formations</h3>
+            <p>Hassle-free Company Registration, GST filings, and MSME processing tailored for Indian businesses.</p>
         </div>
-
-        <!-- Block 2: Indirect Tax & Compliance -->
-        <div class="category-block">
-            <div class="category-title">💎 Indirect Tax & Compliance</div>
-            <p class="category-desc">Continuous oversight of systemic transactional taxation metrics to keep your commercial operations completely audit-ready.</p>
-            
-            <ul class="service-list">
-                <li class="service-item">
-                    <strong>GST Corporate Setup:</strong>
-                    <p>Secure initial commercial tax registration numbers seamlessly.</p>
-                </li>
-                <li class="service-item">
-                    <strong>Structured Return Filings:</strong>
-                    <p>Timely execution of monthly and quarterly GSTR-1 & GSTR-3B documentations.</p>
-                </li>
-                <li class="service-item">
-                    <strong>Input Tax Credit Auditing:</strong>
-                    <p>Deep financial balancing to optimize tax savings and secure refunds safely.</p>
-                </li>
-            </ul>
+        <div class="feat-box">
+            <h3>Virtual Assistant</h3>
+            <p>Professional management for office data entry, video modifications, and unique business graphics.</p>
         </div>
-
-
-        <!-- SECTION 2: PERFORMANCE DIGITAL ARCHITECTURE -->
-        <h2 class="main-section-title">Performance Digital Architecture</h2>
-        <p class="section-desc">Registration is only the first step. We deploy advanced growth networks to build, position, and monetize your digital footprint.</p>
-
-        <!-- Block 3: Media Acquisition & Paid Ads -->
-        <div class="category-block">
-            <div class="category-title">🚀 Media Acquisition & Paid Ads</div>
-            <p class="category-desc">Data-driven marketing funnels designed to target specific user intent profiles and drive high-intent client inquiries.</p>
-            
-            <ul class="service-list">
-                <li class="service-item">
-                    <strong>Meta & Instagram Campaigns:</strong>
-                    <p>High-conversion lead generation architecture tailored for modern services.</p>
-                </li>
-                <li class="service-item">
-                    <strong>Google Ad Performance:</strong>
-                    <p>Capture active search intent fields instantly to lower customer acquisition costs.</p>
-                </li>
-                <li class="service-item">
-                    <strong>Ad Budget Optimization:</strong>
-                    <p>Continuous engineering analytics to maximize ROI metrics on active media spend.</p>
-                </li>
-            </ul>
+        <div class="feat-box">
+            <h3>Web Designing</h3>
+            <p>Clean, mobile-optimized digital architectures crafted specially to elevate your global online presence.</p>
         </div>
+    </section>
 
-    </div>
+    <section class="quick-contact">
+        <h2>Contact Expert Garima Singh</h2>
+        <p><strong>Phone:</strong> +91 9930016161 &nbsp;|&nbsp; <strong>Address:</strong> Virtual Office Support Across India</p>
+    </section>
 
-    <!-- Corporate Footer -->
     <footer>
-        <p>&copy; 2026 Treksea. All Corporate Legal & Digital Solutions Reserved.</p>
+        <p>&copy; 2026 <a href="https://treksea.in" style="text-decoration:none;">treksea.in</a> / Legaledge. All Rights Reserved.</p>
     </footer>
 
 </body>
