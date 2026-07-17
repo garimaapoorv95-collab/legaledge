@@ -2,54 +2,61 @@
 <html lang="en">
 <head>
     <style>
-        :root { --navy: #1a2a4a; --gold: #b89b72; --white: #ffffff; }
-        body { background-color: var(--navy); color: var(--white); font-family: sans-serif; padding: 20px; }
-        .service-box { border: 2px solid var(--gold); padding: 25px; margin-bottom: 30px; border-radius: 10px; background: rgba(255,255,255,0.05); }
-        h2 { color: var(--gold); border-bottom: 2px solid var(--gold); display: inline-block; }
-        h3 { color: var(--gold); }
-        .content { margin-top: 15px; }
-        .point { margin-bottom: 10px; }
+        :root { --navy: #1a2a4a; --gold: #b89b72; }
+        body { background-color: var(--navy); color: white; font-family: sans-serif; padding: 20px; }
+        .service-container { margin-bottom: 40px; border: 2px solid var(--gold); padding: 25px; border-radius: 10px; background: rgba(255,255,255,0.05); }
+        h2 { color: var(--gold); }
+        h3 { color: var(--gold); margin-top: 15px; }
+        .details-grid { display: grid; gap: 10px; }
     </style>
 </head>
 <body>
 
-    <a href="index.html" style="color: var(--gold); font-weight: bold;">⬅ Back to Home</a>
-    <h1>Our Professional Services</h1>
+<a href="index.html" style="color:var(--gold);">⬅ Back to Home</a>
+<h1 style="text-align:center;">Our Legal Services</h1>
 
-    <!-- Private Limited Service -->
-    <div class="service-box">
-        <h2>Private Limited Company</h2>
-        <div class="content">
-            <p><strong>Benefits:</strong> Corporate identity, funding eligibility, and limited liability.</p>
-            <h3>Includes:</h3>
-            <p>Certificate of Incorporation, ePAN & eTAN, AoA & MoA, DIN, Class 3 DSC, Current Account Opening, GST, ESI & PF.</p>
-            
-            <h3>Registration Process:</h3>
-            <div class="point">• <strong>Choose Company Name:</strong> Select a unique name.</div>
-            <div class="point">• <strong>Digital Signature:</strong> Class 3 DSC for secure filing.</div>
-            <div class="point">• <strong>MoA & AoA:</strong> Prepare essential charter documents.</div>
-            <div class="point">• <strong>Incorporation Form:</strong> File SPICe+ forms with ROC.</div>
-            <div class="point">• <strong>Approval:</strong> Receive DIN and Incorporation Certificate.</div>
-        </div>
-    </div>
+<!-- Repeat this block for all 6 services -->
+<div class="service-container">
+    <h2>Private Limited Company</h2>
+    <p><strong>Overview:</strong> The best corporate identity for startups. It provides limited liability protection and builds massive trust for funding. We handle the entire MCA filing process from A to Z, ensuring 100% compliance.</p>
+    <h3>Eligibility:</h3>
+    <p>Min 2 Directors, Min 2 Shareholders, Indian Resident Director required.</p>
+    <h3>Registration Process:</h3>
+    <p>1. Name Search 2. DSC Procurement 3. MoA/AoA Drafting 4. SPICe+ Filing 5. COI Issuance.</p>
+    <h3>Documents Required:</h3>
+    <p>PAN, Aadhaar, Utility Bill (Electricity), Rent Agreement.</p>
+    <h3>How We Help:</h3>
+    <p>We provide a dedicated manager, handle DIN/DSC, and assist in current account opening.</p>
+</div>
 
-    <!-- GST Service -->
-    <div class="service-box">
-        <h2>GST Registration & Compliance</h2>
-        <div class="content">
-            <h3>Process:</h3>
-            <p>Registration, Monthly GST Return Filing, Dedicated Manager, and Tax Planning.</p>
-            <p><strong>Eligibility:</strong> Business turnover exceeding threshold limits or mandatory registration requirements.</p>
-        </div>
-    </div>
+<div class="service-container">
+    <h2>GST Registration</h2>
+    <p><strong>Overview:</strong> Mandatory for businesses exceeding turnover limits. We ensure your business is tax-compliant and eligible for government tenders.</p>
+    <h3>Includes:</h3>
+    <p>Registration, Monthly Filing (GSTR-1, 3B), and Annual Returns.</p>
+</div>
 
-    <!-- Terms & Conditions Section -->
-    <div class="service-box" style="background: var(--white); color: var(--navy);">
-        <h2>Terms and Conditions</h2>
-        <p><strong>Services Overview:</strong> We offer company registration, business licenses, and tax assistance.</p>
-        <p><strong>Confidentiality:</strong> Your data is protected and used only for service delivery.</p>
-        <p><strong>Limitation of Liability:</strong> Total liability is limited to the fees paid by the client.</p>
-    </div>
+<div class="service-container">
+    <h2>LLP Registration</h2>
+    <p><strong>Overview:</strong> A perfect blend of partnership flexibility and corporate limited liability. Ideal for professional services.</p>
+    <h3>Process:</h3>
+    <p>DSC Procurement -> Name Reservation -> Incorporation -> LLP Agreement Filing.</p>
+</div>
+
+<div class="service-container">
+    <h2>OPC (One Person Company)</h2>
+    <p><strong>Overview:</strong> Corporate status for solo entrepreneurs. You control the company, but with the benefits of a Private Limited entity.</p>
+</div>
+
+<div class="service-container">
+    <h2>MSME/Udyam Certificate</h2>
+    <p><strong>Overview:</strong> Get official government recognition to avail subsidies, lower interest rates on loans, and priority sector lending.</p>
+</div>
+
+<div class="service-container">
+    <h2>Startup India Registration</h2>
+    <p><strong>Overview:</strong> DPIIT recognition to get tax holidays and direct access to government funding programs.</p>
+</div>
 
 </body>
 </html>
