@@ -2,64 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services - LegalEdge</title>
     <style>
-        body { font-family: sans-serif; margin: 0; background-color: #0c1c35; color: #ffffff; }
+        body { font-family: sans-serif; background: #0c1c35; color: white; margin: 0; }
         .container { max-width: 900px; margin: auto; padding: 20px; }
-        
-        /* Header */
-        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 2px solid #d4af37; }
-        .menu-btn { font-size: 30px; cursor: pointer; color: #d4af37; }
-        
-        /* Service Details Box */
-        .service-box { background: #1a2a47; padding: 25px; border-radius: 8px; border-left: 5px solid #d4af37; margin-bottom: 30px; }
+        header { border-bottom: 2px solid #d4af37; display: flex; justify-content: space-between; padding: 20px 0; }
+        .nav-links a { color: #d4af37; text-decoration: none; margin-left: 15px; }
+        .service-section { background: #1a2a47; padding: 20px; border-radius: 8px; margin-top: 20px; border-left: 5px solid #d4af37; }
         h2 { color: #d4af37; }
-        h3 { color: #d4af37; margin-top: 20px; }
-        
-        /* Footer */
-        footer { margin-top: 50px; padding: 30px; background: #050e1d; border-top: 2px solid #d4af37; text-align: center; font-size: 14px; }
+        footer { margin-top: 50px; padding: 30px; background: #050e1d; text-align: center; border-top: 2px solid #d4af37; }
     </style>
 </head>
 <body>
-
 <div class="container">
     <header>
-        <div style="font-weight: bold; font-size: 20px;">LegalEdge Services</div>
-        <div class="menu-btn" onclick="window.location.href='index.html'">☰</div>
+        <div><strong>LegalEdge</strong></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+        </div>
     </header>
 
-    <!-- Example: Private Limited Company Detail -->
-    <div class="service-box" id="pvt-ltd">
+    <!-- Pvt Ltd Section -->
+    <div id="pvt" class="service-section">
         <h2>Private Limited Company</h2>
-        <p><strong>Overview:</strong> A separate legal entity offering limited liability, ideal for startups and scaling businesses.</p>
-        
+        <p><strong>Overview:</strong> A separate legal entity offering limited liability, ideal for startups seeking investor funding.</p>
         <h3>Eligibility:</h3>
-        <p>Minimum 2 directors, one resident in India, unique company name.</p>
-        
-        <h3>Documents Required:</h3>
-        <p>PAN Card, [Aadhaar Redacted], Latest Utility Bill, Bank Statement, Passport size photo.</p>
-        
-        <h3>Process:</h3>
-        <p>1. DSC/DIN setup -> 2. Name Approval -> 3. Filing SPICe+ forms -> 4. Certificate of Incorporation.</p>
-        
-        <h3>Price:</h3>
-        <p>Starting at ₹XXXX/- (Includes Government Fees).</p>
+        <p>Minimum 2 directors, 1 resident in India, No minimum capital.</p>
+        <h3>Documents:</h3>
+        <p>PAN, Aadhaar [Redacted], Utility Bill, Bank Statement, Photo.</p>
     </div>
 
-    <!-- आप इसी तरह बाकी सर्विस के बॉक्स नीचे बना सकती हैं -->
-    <div class="service-box" id="gst">
+    <!-- OPC Section -->
+    <div id="opc" class="service-section">
+        <h2>One Person Company (OPC)</h2>
+        <p><strong>Overview:</strong> A structure where one person has full control with limited liability protection.</p>
+        <h3>Eligibility:</h3>
+        <p>Single shareholder/director, must appoint a nominee, must be an Indian resident.</p>
+    </div>
+
+    <!-- LLP Section -->
+    <div id="llp" class="service-section">
+        <h2>Limited Liability Partnership (LLP)</h2>
+        <p><strong>Overview:</strong> A flexible partnership structure offering limited liability protection.</p>
+        <h3>Eligibility:</h3>
+        <p>Minimum 2 partners, no minimum capital, registered office in India.</p>
+    </div>
+
+    <!-- GST & MSME -->
+    <div id="gst" class="service-section">
         <h2>GST Registration</h2>
-        <p><strong>Overview:</strong> Mandatory registration for businesses with specific turnover limits.</p>
-        <p><strong>Price:</strong> ₹XXXX/-</p>
+        <p>Essential for tax compliance for businesses exceeding turnover thresholds.</p>
+    </div>
+    
+    <div id="msme" class="service-section">
+        <h2>MSME / Udyam Registration</h2>
+        <p>Unlock government benefits and subsidies for small and medium enterprises.</p>
     </div>
 
     <footer>
         <p><strong>Contact:</strong> Garima Singh | 993016161 | Legaledgetreksea@gmail.com</p>
-        <p><strong>Office:</strong> Milinium Park, Seawood Station, Navi Mumbai 400706</p>
-        <p style="font-size: 12px; color: #888;">Disclaimer: We are a private consulting firm. Required docs: PAN, [Aadhaar Redacted], utility bills.</p>
+        <p>Office: Milinium Park, Seawood Station, Navi Mumbai 400706</p>
     </footer>
 </div>
-
 </body>
-</html>        
+</html>
