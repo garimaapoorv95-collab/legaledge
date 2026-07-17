@@ -4,60 +4,79 @@
     <meta charset="UTF-8">
     <title>Our Services - LegalEdge</title>
     <style>
-        body { font-family: sans-serif; background: #0c1c35; color: white; margin: 0; }
+        body { font-family: sans-serif; background: #0c1c35; color: #ffffff; margin: 0; line-height: 1.6; }
         .container { max-width: 900px; margin: auto; padding: 20px; }
-        header { border-bottom: 2px solid #d4af37; display: flex; justify-content: space-between; padding: 20px 0; }
-        .nav-links a { color: #d4af37; text-decoration: none; margin-left: 15px; }
-        .service-section { background: #1a2a47; padding: 20px; border-radius: 8px; margin-top: 20px; border-left: 5px solid #d4af37; }
-        h2 { color: #d4af37; }
-        footer { margin-top: 50px; padding: 30px; background: #050e1d; text-align: center; border-top: 2px solid #d4af37; }
+        
+        /* Header & Nav */
+        header { border-bottom: 2px solid #d4af37; display: flex; justify-content: space-between; align-items: center; padding: 20px 0; }
+        .nav-links a { color: #d4af37; text-decoration: none; margin-left: 20px; font-weight: bold; }
+        
+        /* Service Sections */
+        .service-section { background: #1a2a47; padding: 25px; border-radius: 8px; border-left: 5px solid #d4af37; margin-bottom: 40px; }
+        h2 { color: #d4af37; margin-top: 0; }
+        h3 { color: #d4af37; }
+        
+        /* Footer */
+        footer { margin-top: 50px; padding: 30px; background: #050e1d; text-align: center; border-top: 2px solid #d4af37; font-size: 14px; }
     </style>
 </head>
 <body>
+
 <div class="container">
     <header>
-        <div><strong>LegalEdge</strong></div>
+        <div style="font-size: 24px; font-weight: bold;">LegalEdge</div>
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
         </div>
     </header>
 
-    <!-- Pvt Ltd Section -->
-    <div id="pvt" class="service-section">
+    <h1 style="color: #d4af37; text-align: center;">Our Comprehensive Services</h1>
+
+    <!-- 1. Private Limited -->
+    <div id="pvt-ltd" class="service-section">
         <h2>Private Limited Company</h2>
-        <p><strong>Overview:</strong> A separate legal entity offering limited liability, ideal for startups seeking investor funding.</p>
+        <p><strong>Overview:</strong> India's most trusted legal structure for startups. Offers limited liability protection.</p>
         <h3>Eligibility:</h3>
-        <p>Minimum 2 directors, 1 resident in India, No minimum capital.</p>
+        <p>Min 2 directors (one resident in India), min 2 shareholders.</p>
         <h3>Documents:</h3>
-        <p>PAN, Aadhaar [Redacted], Utility Bill, Bank Statement, Photo.</p>
+        <p>PAN, [Aadhaar Redacted], Identity proof, Utility bill, Rent agreement/NOC.</p>
     </div>
 
-    <!-- OPC Section -->
-    <div id="opc" class="service-section">
-        <h2>One Person Company (OPC)</h2>
-        <p><strong>Overview:</strong> A structure where one person has full control with limited liability protection.</p>
-        <h3>Eligibility:</h3>
-        <p>Single shareholder/director, must appoint a nominee, must be an Indian resident.</p>
-    </div>
-
-    <!-- LLP Section -->
+    <!-- 2. LLP -->
     <div id="llp" class="service-section">
         <h2>Limited Liability Partnership (LLP)</h2>
-        <p><strong>Overview:</strong> A flexible partnership structure offering limited liability protection.</p>
+        <p><strong>Overview:</strong> Ideal for professionals wanting a flexible partnership with limited liability.</p>
         <h3>Eligibility:</h3>
-        <p>Minimum 2 partners, no minimum capital, registered office in India.</p>
+        <p>Min 2 partners, at least one designated partner must be an Indian resident.</p>
     </div>
 
-    <!-- GST & MSME -->
+    <!-- 3. OPC -->
+    <div id="opc" class="service-section">
+        <h2>One Person Company (OPC)</h2>
+        <p><strong>Overview:</strong> Full control for solo entrepreneurs with limited liability protection.</p>
+        <h3>Eligibility:</h3>
+        <p>1 Indian resident as Director/Shareholder, must appoint a nominee.</p>
+    </div>
+
+    <!-- 4. Partnership -->
+    <div id="partnership" class="service-section">
+        <h2>Partnership Firm</h2>
+        <p><strong>Overview:</strong> Simple and economical structure for family-run or small trades.</p>
+        <h3>Eligibility:</h3>
+        <p>Min 2 partners (Max 50), requires a written Partnership Deed.</p>
+    </div>
+
+    <!-- 5. GST -->
     <div id="gst" class="service-section">
         <h2>GST Registration</h2>
-        <p>Essential for tax compliance for businesses exceeding turnover thresholds.</p>
+        <p><strong>Overview:</strong> Crucial for professional credibility and operating across state borders.</p>
     </div>
-    
+
+    <!-- 6. MSME -->
     <div id="msme" class="service-section">
         <h2>MSME / Udyam Registration</h2>
-        <p>Unlock government benefits and subsidies for small and medium enterprises.</p>
+        <p><strong>Overview:</strong> Unlocks government benefits, subsidies, and lower interest rates on loans.</p>
     </div>
 
     <footer>
