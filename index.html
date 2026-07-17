@@ -3,51 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LegalEdge</title>
+    <title>LegalEdge - Company Registration & GST Services</title>
     <style>
-        body { margin: 0; padding: 0; background-color: #001f3f; color: #ffd700; font-family: sans-serif; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #0c1c35; color: #ffffff; }
+        .container { max-width: 1100px; margin: auto; padding: 20px; }
         
         /* Header */
-        header { display: flex; justify-content: space-between; align-items: center; padding: 20px; border-bottom: 2px solid #ffd700; }
-        .logo { color: white; font-size: 24px; font-weight: bold; }
-        .menu-icon { color: white; font-size: 30px; cursor: pointer; }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 2px solid #d4af37; }
+        .logo-text { font-size: 28px; font-weight: bold; color: #ffffff; }
+        .logo-sub { color: #d4af37; font-size: 14px; }
+        
+        /* Hero Section */
+        .hero { display: flex; align-items: center; justify-content: space-between; padding: 50px 0; }
+        .hero-text { flex: 1; }
+        .hero h1 { font-size: 40px; color: #ffffff; }
+        .hero p { color: #d4af37; font-size: 18px; }
+        .form-box { flex: 0.5; background: #ffffff; padding: 30px; border-radius: 8px; color: #333; }
+        input { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { width: 100%; padding: 10px; background: #0c1c35; color: white; border: none; cursor: pointer; font-weight: bold; }
 
-        /* Main Content */
-        main { display: flex; padding: 50px; gap: 50px; }
-        .home-content { flex: 2; }
-        h1 { color: white; font-size: 3rem; }
-        .form-side { flex: 1; background: white; padding: 20px; color: #333; border-radius: 8px; }
-
+        /* General Section */
+        h2 { color: #d4af37; text-align: center; margin-top: 50px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .card { background: #1a2a47; padding: 20px; border-radius: 8px; border: 1px solid #d4af37; }
+        
         /* Footer */
-        footer { padding: 30px; border-top: 2px solid #ffd700; text-align: center; font-size: 0.9rem; }
+        footer { margin-top: 50px; padding: 40px; background: #050e1d; border-top: 2px solid #d4af37; text-align: center; }
     </style>
 </head>
 <body>
 
+<div class="container">
+    <!-- Header -->
     <header>
-        <div class="logo">LegalEdge</div>
-        <div class="menu-icon">☰</div>
+        <div>
+            <div class="logo-text">LegalEdge</div>
+            <div class="logo-sub">COMPANY REGISTRATION & GST SERVICES</div>
+        </div>
     </header>
 
-    <main>
-        <div class="home-content">
-            <h1>LegalEdge</h1>
-            <p>Company Registration & GST Services</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Give Your Business a Legal Identity, Effortlessly.</h1>
+            <p>Incorporate your Company, LLP, or get your GST registration done from the comfort of your home.</p>
         </div>
-        <div class="form-side">
-            <h3>Quick Enquiry</h3>
-            <form>
-                <input type="text" placeholder="Name" style="width:100%; margin-bottom:10px;"><br>
-                <input type="text" placeholder="Phone" style="width:100%; margin-bottom:10px;"><br>
-                <button>Submit</button>
-            </form>
+        <div class="form-box">
+            <h3>Get Started Now</h3>
+            <input type="text" placeholder="Full Name">
+            <input type="text" placeholder="Phone Number">
+            <input type="email" placeholder="Email Address">
+            <button>Submit Details</button>
         </div>
-    </main>
+    </section>
 
+    <!-- Our Services -->
+    <h2>Our Services</h2>
+    <div class="grid">
+        <div class="card"><h3>Private Limited Company</h3></div>
+        <div class="card"><h3>LLP Registration</h3></div>
+        <div class="card"><h3>OPC & Sole Proprietorship</h3></div>
+        <div class="card"><h3>GST Registration</h3></div>
+        <div class="card"><h3>MSME / Udyam</h3></div>
+        <div class="card"><h3>Trademark & Patent</h3></div>
+    </div>
+
+    <!-- How It Works -->
+    <h2>How It Works</h2>
+    <div class="grid">
+        <div class="card"><h4>1. Submit Details</h4><p>Fill out the form and upload documents.</p></div>
+        <div class="card"><h4>2. Expert Verification</h4><p>Our experts verify and file your application.</p></div>
+        <div class="card"><h4>3. Get Registered</h4><p>Certificate delivered to your inbox.</p></div>
+    </div>
+
+    <!-- Footer -->
     <footer>
-        <p>Garima Singh | Contact: 9930016161 | Email: legaledgetreksea@gmail.com / Garima@treksea.in</p>
-        <p>Office Address: Milinium Park, Seawood Station, Navi Mumbai 400706</p>
+        <p><strong>Contact:</strong> Garima Singh | 993016161 | Legaledgetreksea@gmail.com</p>
+        <p><strong>Office:</strong> Milinium Park, Seawood Station, Navi Mumbai 400706</p>
+        <p style="font-size: 12px; color: #888; margin-top: 20px;">
+            Disclaimer: We are a private consulting firm. We are not a government agency, but we facilitate registrations on behalf of our clients. 
+            Note: For business registration, identity documents like PAN card, [Aadhaar Redacted], and utility bills for address proof are typically required.
+        </p>
     </footer>
+</div>
 
 </body>
 </html>
