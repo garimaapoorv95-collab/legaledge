@@ -1,32 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Vacations - Services</title>
+    
     <style>
-        :root { --navy: #1a2a4a; --gold: #b89b72; }
-        body { background-color: var(--navy); color: white; font-family: sans-serif; margin: 0; }
-        nav { background: white; padding: 20px; text-align: center; border-bottom: 3px solid var(--gold); }
-        .hero { display: flex; padding: 50px; align-items: center; justify-content: space-around; }
-        .form-box { background: white; color: var(--navy); padding: 20px; border-radius: 10px; }
+        /* CSS कोड */
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f7f6; }
+        
+        .section-title { text-align: center; color: #2c3e50; margin-top: 40px; }
+        
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .service-card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover { transform: translateY(-10px); }
+
+        .service-card h3 { color: #007bff; margin-top: 0; }
+
+        .service-card p { color: #555; line-height: 1.6; font-size: 0.95rem; }
+
+        #faq { max-width: 800px; margin: 40px auto; padding: 20px; background: #fff; border-radius: 8px; }
+        
+        .faq-item { margin-bottom: 20px; padding: 15px; border-bottom: 1px solid #eee; }
+
+        footer { text-align: center; font-size: 0.8rem; color: #777; padding: 20px; }
     </style>
 </head>
 <body>
-    <nav>
-        <h1 style="color:var(--navy);">LegalEdge</h1>
-        <a href="index.html">Home</a> | <a href="service.html">Services</a>
-    </nav>
 
-    <section class="hero">
-        <div>
-            <h1>Company Registration & GST</h1>
-            <p>Your partner for Pvt Ltd, LLP, and more. No hidden charges.</p>
+    <!-- Services Section -->
+    <h2 class="section-title">Corporate Registration (India)</h2>
+    <div class="services-container">
+        <div class="service-card">
+            <h3>Private Limited Company</h3>
+            <p>Best for startups seeking investor funding, offering limited liability.</p>
         </div>
-        <div class="form-box">
-            <form action="https://formspree.io/f/mbdngoln" method="POST">
-                <input type="text" name="name" placeholder="Name" required><br><br>
-                <input type="tel" name="phone" placeholder="Phone" required><br><br>
-                <button type="submit">Submit</button>
-            </form>
+        <div class="service-card">
+            <h3>Public Limited</h3>
+            <p>Scalable business structure for larger enterprises.</p>
+        </div>
+        <div class="service-card">
+            <h3>Sole Proprietorship</h3>
+            <p>Ideal for individual business owners with direct control.</p>
+        </div>
+        <div class="service-card">
+            <h3>LLP (Limited Liability Partnership)</h3>
+            <p>A flexible partnership structure with limited liability protections.</p>
+        </div>
+        <div class="service-card">
+            <h3>OPC (One Person Company)</h3>
+            <p>Ideal for entrepreneurs who want to run a company alone with limited liability.</p>
+        </div>
+        <div class="service-card">
+            <h3>Partnership Firm</h3>
+            <p>Traditional business structure for co-founders.</p>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <h3 style="text-align: center;">Frequently Asked Questions</h3>
+        <div class="faq-item">
+            <p><strong>Q: What is the minimum capital required for a Private Limited Company?</strong><br>
+            A: There is no minimum capital requirement to register a Private Limited Company in India.</p>
+        </div>
+        <div class="faq-item">
+            <p><strong>Q: How long does the registration process take?</strong><br>
+            A: It typically takes 7-15 working days, depending on government processing times.</p>
         </div>
     </section>
+
+    <footer>
+        <p>Terms & Conditions: All professional fees are exclusive of government stamp duty and DSC costs.</p>
+    </footer>
+
 </body>
 </html>
