@@ -1,60 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>LegalEdge | Official</title>
     <style>
-        /* Color Scheme */
         :root { --navy: #1a2a4a; --gold: #b89b72; }
-        body { font-family: sans-serif; margin: 0; color: var(--navy); }
-        
-        /* Navbar */
-        nav { display: flex; justify-content: space-between; padding: 20px; background: #fff; border-bottom: 3px solid var(--gold); }
-        .logo { font-size: 24px; font-weight: bold; }
-        .nav-links a { margin: 0 10px; text-decoration: none; color: var(--navy); font-weight: bold; }
-        
-        /* Form & Hero */
-        .hero { display: flex; padding: 50px; background: #f4f4f4; justify-content: space-around; }
-        .contact-form { background: white; padding: 25px; border: 2px solid var(--navy); border-radius: 10px; }
-        button { background: var(--navy); color: white; border: none; padding: 12px 20px; cursor: pointer; }
-        
-        /* Services Box */
-        .services { padding: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-        .card { border-top: 4px solid var(--gold); padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        body { background-color: var(--navy); color: white; font-family: sans-serif; margin: 0; }
+        nav { background: white; padding: 20px; text-align: center; border-bottom: 3px solid var(--gold); }
+        .hero { display: flex; padding: 50px; align-items: center; justify-content: space-around; }
+        .form-box { background: white; color: var(--navy); padding: 20px; border-radius: 10px; }
     </style>
 </head>
 <body>
-
     <nav>
-        <div class="logo">LegalEdge</div>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="service.html">Services</a>
-            <a href="contact.html">Contact</a>
-        </div>
+        <h1 style="color:var(--navy);">LegalEdge</h1>
+        <a href="index.html">Home</a> | <a href="service.html">Services</a>
     </nav>
 
     <section class="hero">
-        <div class="hero-text">
-            <h1>LegalEdge Business Services</h1>
-            <p>Your growth partner for Pvt Ltd, LLP, GST & More.</p>
+        <div>
+            <h1>Company Registration & GST</h1>
+            <p>Your partner for Pvt Ltd, LLP, and more. No hidden charges.</p>
         </div>
-        <div class="contact-form">
-            <h3>Get a Free Consultation</h3>
+        <div class="form-box">
             <form action="https://formspree.io/f/mbdngoln" method="POST">
-                <input type="text" name="name" placeholder="Full Name" required><br><br>
-                <input type="tel" name="phone" placeholder="Phone Number" required><br><br>
-                <button type="submit">Submit Now</button>
+                <input type="text" name="name" placeholder="Name" required><br><br>
+                <input type="tel" name="phone" placeholder="Phone" required><br><br>
+                <button type="submit">Submit</button>
             </form>
         </div>
     </section>
-
-    <section class="services">
-        <div class="card"><h3>Private Limited</h3><p>Corporate identity, funding & limited liability.</p></div>
-        <div class="card"><h3>LLP Registration</h3><p>Partnership flexibility with legal protection.</p></div>
-        <div class="card"><h3>GST Services</h3><p>Monthly filings, return preparation & support.</p></div>
-    </section>
-
 </body>
 </html>
