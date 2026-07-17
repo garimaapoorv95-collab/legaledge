@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Limited Company Incorporation - LegalEdge</title>
+    <style>
+        body { font-family: sans-serif; background-color: #0c1c35; color: #ffffff; margin: 0; padding: 20px; line-height: 1.6; }
+        .container { max-width: 800px; margin: auto; }
+        h1, h2 { color: #d4af37; border-bottom: 2px solid #d4af37; padding-bottom: 10px; }
+        .section { background: #1a2a47; padding: 20px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #d4af37; }
+        footer { text-align: center; margin-top: 50px; font-size: 14px; border-top: 1px solid #d4af37; padding-top: 20px; }
+        .back-btn { display: inline-block; padding: 10px 20px; background: #d4af37; color: #0c1c35; text-decoration: none; font-weight: bold; border-radius: 5px; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
 
+<div class="container">
+    <a href="index.html" class="back-btn">← Home</a>
+    <h1>Private Limited Company Incorporation</h1>
+
+    <div class="section">
+        <h2>📝 Overview</h2>
+        <p>A Private Limited Company (Pvt Ltd) is the gold standard for businesses in India. It treats the business as an independent "legal person" separate from its owners.</p>
+        <p><strong>Power of Limited Liability:</strong> Your personal bank accounts, homes, and assets are protected by law.</p>
+    </div>
+
+    <div class="section">
+        <h2>👥 Eligibility</h2>
+        <ul>
+            <li>Minimum 2 Directors (One must be an Indian resident).</li>
+            <li>Minimum 2 Shareholders.</li>
+            <li>Physical office address in India.</li>
+            <li>No minimum capital requirement.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>📁 Documents Required</h2>
+        <p><strong>For Directors/Shareholders:</strong> PAN Card, [Aadhaar Redacted], Identity Proof (Passport/Voter ID), Recent Bank Statement/Utility Bill (last 2 months), Passport-sized photograph.</p>
+        <p><strong>For Registered Office:</strong> Electricity bill and NOC from property owner (or Rent Agreement).</p>
+    </div>
+
+    <div class="section">
+        <h2>⚡ The Process</h2>
+        <ol>
+            <li><strong>Digital Signatures (DSC):</strong> Obtaining secure electronic signatures for all directors.</li>
+            <li><strong>Name Reservation:</strong> Reserving a unique name via MCA.</li>
+            <li><strong>Legal Drafting:</strong> Drafting MOA and AOA.</li>
+            <li><strong>Submission:</strong> Final SPICe+ portal submission.</li>
+            <li><strong>Certificate & Kits:</strong> Receiving COI, PAN, and TAN.</li>
+        </ol>
+    </div>
+
+    <footer>
+        <p><strong>LegalEdge</strong> | Garima Singh | 993016161 | Legaledgetreksea@gmail.com</p>
+        <p>Milinium Park, Seawood Station, Navi Mumbai 400706</p>
+    </footer>
+</div>
+</body>
+</html>
