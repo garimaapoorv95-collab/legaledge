@@ -1,4 +1,4 @@
-                    <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,14 +14,21 @@
         #nav-menu { display: none; background: #1a2a47; padding: 15px; text-align: center; }
         #nav-menu a { display: block; color: white; padding: 10px; text-decoration: none; }
 
-        /* Hero */
+        /* Hero Section */
         .hero { text-align: center; padding: 40px 0; }
-        .cta-btn { background: #d4af37; color: #0c1c35; padding: 15px 30px; border: none; font-weight: bold; cursor: pointer; border-radius: 5px; margin-top: 10px; }
-        
-        /* Service Cards (Clickable) */
+        .cta-btn { background: #d4af37; color: #0c1c35; padding: 15px 30px; border: none; font-weight: bold; cursor: pointer; border-radius: 5px; }
+
+        /* Form */
+        .form-box { background: #ffffff; padding: 20px; border-radius: 8px; color: #333; margin: 20px auto; max-width: 400px; }
+        input { width: 100%; padding: 8px; margin: 5px 0; border: 1px solid #ccc; box-sizing: border-box; }
+        button { width: 100%; padding: 10px; background: #0c1c35; color: white; border: none; cursor: pointer; }
+
+        /* Services & How it Works */
         .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 20px; }
-        .card { background: #1a2a47; padding: 20px; border: 1px solid #d4af37; text-decoration: none; color: white; border-radius: 5px; text-align: center; transition: 0.3s; }
-        .card:hover { background: #d4af37; color: #0c1c35; }
+        .card { background: #1a2a47; padding: 20px; border: 1px solid #d4af37; color: white; border-radius: 5px; text-align: center; }
+
+        /* Footer */
+        footer { margin-top: 50px; padding: 30px; background: #050e1d; border-top: 2px solid #d4af37; text-align: center; font-size: 14px; }
     </style>
 </head>
 <body>
@@ -40,24 +47,43 @@
         <a href="about.html">About</a>
         <a href="service.html">Services</a>
         <a href="contact.html">Contact</a>
+        <a href="blog.html">Blog</a>
     </div>
 
     <section class="hero">
         <h1>Give Your Business a Legal Identity, Effortlessly.</h1>
-        <!-- Call to Action (Click to Call) -->
         <a href="tel:993016161"><button class="cta-btn">Call Now: 993016161</button></a>
     </section>
 
-    <!-- Services Section -->
+    <div class="form-box">
+        <h3>Quick Enquiry</h3>
+        <input type="text" placeholder="Full Name">
+        <input type="text" placeholder="Phone Number">
+        <button>Submit Details</button>
+    </div>
+
     <h2 style="color: #d4af37; text-align: center;">Our Services</h2>
     <div class="service-grid">
-        <a href="company.html" class="card">Private Limited Company</a>
-        <a href="llp.html" class="card">LLP Registration</a>
-        <a href="opc.html" class="card">OPC & Sole Prop</a>
-        <a href="gst.html" class="card">GST Registration</a>
-        <a href="msme.html" class="card">MSME / Udyam</a>
-        <a href="trademark.html" class="card">Trademark & Patent</a>
+        <div class="card">Private Limited Company</div>
+        <div class="card">LLP Registration</div>
+        <div class="card">OPC & Sole Prop</div>
+        <div class="card">GST Registration</div>
+        <div class="card">MSME / Udyam</div>
+        <div class="card">Trademark & Patent</div>
     </div>
+
+    <h2 style="color: #d4af37; text-align: center;">How It Works</h2>
+    <div class="service-grid">
+        <div class="card">1. Submit Details</div>
+        <div class="card">2. Expert Verification</div>
+        <div class="card">3. Get Registered</div>
+    </div>
+
+    <footer>
+        <p><strong>Contact:</strong> Garima Singh | 993016161 | Legaledgetreksea@gmail.com</p>
+        <p><strong>Office:</strong> Milinium Park, Seawood Station, Navi Mumbai 400706</p>
+        <p style="font-size: 12px; color: #888;">Disclaimer: We are a private consulting firm facilitating registrations. Required docs: PAN, [Aadhaar Redacted], utility bills.</p>
+    </footer>
 </div>
 
 <script>
@@ -68,4 +94,4 @@
 </script>
 
 </body>
-</html>
+</html                           
