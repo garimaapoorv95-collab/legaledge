@@ -1,93 +1,52 @@
-<!DOCTYPE html>
+            <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Vacations - Services</title>
-    
+    <title>LegalEdge</title>
     <style>
-        /* CSS कोड */
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f7f6; }
+        body { margin: 0; padding: 0; background-color: #001f3f; color: #ffd700; font-family: sans-serif; }
         
-        .section-title { text-align: center; color: #2c3e50; margin-top: 40px; }
-        
-        .services-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
+        /* Header */
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px; border-bottom: 2px solid #ffd700; }
+        .logo { color: white; font-size: 24px; font-weight: bold; }
+        .menu-icon { color: white; font-size: 30px; cursor: pointer; }
 
-        .service-card {
-            background: #ffffff;
-            padding: 30px;
-            border-radius: 12px;
-            border: 1px solid #e0e0e0;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease;
-        }
+        /* Main Content */
+        main { display: flex; padding: 50px; gap: 50px; }
+        .home-content { flex: 2; }
+        h1 { color: white; font-size: 3rem; }
+        .form-side { flex: 1; background: white; padding: 20px; color: #333; border-radius: 8px; }
 
-        .service-card:hover { transform: translateY(-10px); }
-
-        .service-card h3 { color: #007bff; margin-top: 0; }
-
-        .service-card p { color: #555; line-height: 1.6; font-size: 0.95rem; }
-
-        #faq { max-width: 800px; margin: 40px auto; padding: 20px; background: #fff; border-radius: 8px; }
-        
-        .faq-item { margin-bottom: 20px; padding: 15px; border-bottom: 1px solid #eee; }
-
-        footer { text-align: center; font-size: 0.8rem; color: #777; padding: 20px; }
+        /* Footer */
+        footer { padding: 30px; border-top: 2px solid #ffd700; text-align: center; font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
-    <!-- Services Section -->
-    <h2 class="section-title">Corporate Registration (India)</h2>
-    <div class="services-container">
-        <div class="service-card">
-            <h3>Private Limited Company</h3>
-            <p>Best for startups seeking investor funding, offering limited liability.</p>
-        </div>
-        <div class="service-card">
-            <h3>Public Limited</h3>
-            <p>Scalable business structure for larger enterprises.</p>
-        </div>
-        <div class="service-card">
-            <h3>Sole Proprietorship</h3>
-            <p>Ideal for individual business owners with direct control.</p>
-        </div>
-        <div class="service-card">
-            <h3>LLP (Limited Liability Partnership)</h3>
-            <p>A flexible partnership structure with limited liability protections.</p>
-        </div>
-        <div class="service-card">
-            <h3>OPC (One Person Company)</h3>
-            <p>Ideal for entrepreneurs who want to run a company alone with limited liability.</p>
-        </div>
-        <div class="service-card">
-            <h3>Partnership Firm</h3>
-            <p>Traditional business structure for co-founders.</p>
-        </div>
-    </div>
+    <header>
+        <div class="logo">LegalEdge</div>
+        <div class="menu-icon">☰</div>
+    </header>
 
-    <!-- FAQ Section -->
-    <section id="faq">
-        <h3 style="text-align: center;">Frequently Asked Questions</h3>
-        <div class="faq-item">
-            <p><strong>Q: What is the minimum capital required for a Private Limited Company?</strong><br>
-            A: There is no minimum capital requirement to register a Private Limited Company in India.</p>
+    <main>
+        <div class="home-content">
+            <h1>LegalEdge</h1>
+            <p>Company Registration & GST Services</p>
         </div>
-        <div class="faq-item">
-            <p><strong>Q: How long does the registration process take?</strong><br>
-            A: It typically takes 7-15 working days, depending on government processing times.</p>
+        <div class="form-side">
+            <h3>Quick Enquiry</h3>
+            <form>
+                <input type="text" placeholder="Name" style="width:100%; margin-bottom:10px;"><br>
+                <input type="text" placeholder="Phone" style="width:100%; margin-bottom:10px;"><br>
+                <button>Submit</button>
+            </form>
         </div>
-    </section>
+    </main>
 
     <footer>
-        <p>Terms & Conditions: All professional fees are exclusive of government stamp duty and DSC costs.</p>
+        <p>Garima Singh | Contact: 9930016161 | Email: legaledgetreksea@gmail.com / Garima@treksea.in</p>
+        <p>Office Address: Milinium Park, Seawood Station, Navi Mumbai 400706</p>
     </footer>
 
 </body>
