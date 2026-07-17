@@ -3,108 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Legaledge</title>
-    <style>
-        :root {
-            --bg-pink: #FFE5EC;
-            --sea-blue: #0077B6;
-            --sea-blue-light: #0096C7;
-            --text-black: #000000;
-            --white: #FFFFFF;
-        }
+    <title>LegalEdge | Professional Business Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo"><img src="logo.png" alt="LegalEdge"></div>
+        <div class="menu-toggle">☰</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: var(--text-black);
-        }
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>LegalEdge: Your Growth Partner</h1>
+            <p>From Pvt Ltd to GST, we handle the legal architecture of your business.</p>
+        </div>
+        <div class="contact-form">
+            <h3>Get a Free Consultation</h3>
+            <form action="https://formspree.io/f/mbdngoln" method="POST">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <button type="submit">Submit Now</button>
+            </form>
+        </div>
+    </section>
 
-        body {
-            background-color: var(--bg-pink);
-            line-height: 1.6;
-        }
-
-        nav {
-            background: var(--white);
-            padding: 1rem 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .logo {
-            font-size: 1.6rem;
-            font-weight: 800;
-            color: var(--sea-blue);
-            text-decoration: none;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 1.5rem;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1rem;
-            color: var(--text-black);
-        }
-
-        .nav-links a.active {
-            color: var(--sea-blue);
-        }
-
-        .hero {
-            padding: 5rem 5%;
-            text-align: center;
-            background: rgba(255, 255, 255, 0.4);
-        }
-
-        .hero h1 {
-            font-size: 2.5rem;
-            color: var(--sea-blue);
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 800px;
-            margin: 0 auto 2rem auto;
-        }
-
-        .btn-main {
-            display: inline-block;
-            background: var(--sea-blue);
-            color: var(--white) !important;
-            text-decoration: none;
-            padding: 0.8rem 2rem;
-            border-radius: 6px;
-            font-weight: 600;
-            font-size: 1rem;
-        }
-
-        .features {
-            padding: 4rem 5%;
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-
-        .feat-box {
-            background: var(--white);
-            padding: 2rem;
-            border-radius: 12px;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="card"><h3>Private Limited</h3><p>Corporate status & funding eligibility.</p></div>
+            <div class="card"><h3>LLP Registration</h3><p>Flexibility with limited liability.</p></div>
+            <div class="card"><h3>GST Registration</h3><p>Hassle-free tax compliance.</p></div>
+        </div>
+    </section>
+</body>
+</html>            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
         }
 
         .feat-box h3 {
