@@ -3,41 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Legaledge</title>
+    <title>About LegalEdge</title>
     <style>
-        :root { --bg-pink: #FFE5EC; --sea-blue: #0077B6; --text-black: #000000; --white: #FFFFFF; }
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; color: var(--text-black); }
-        body { background: var(--bg-pink); line-height: 1.6; }
-        nav { background: var(--white); padding: 1rem 5%; display: flex; justify-content: space-between; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .logo { font-weight: 800; color: var(--sea-blue); text-decoration: none; }
-        .nav-links a { text-decoration: none; font-weight: 600; margin-left: 1rem; font-size: 0.9rem; }
-        .container { max-width: 600px; margin: 3rem auto; background: var(--white); padding: 2rem; border-radius: 8px; text-align: center; }
-        h1 { color: var(--sea-blue); margin-bottom: 1rem; }
-        .info { background: var(--bg-pink); padding: 1rem; border-radius: 6px; margin-top: 1.5rem; text-align: left; }
-        footer { background: #111; text-align: center; padding: 1rem; margin-top: 5rem; }
+        body { font-family: sans-serif; margin: 0; background-color: #0c1c35; color: #ffffff; }
+        .container { max-width: 900px; margin: auto; padding: 20px; }
+        
+        /* Header */
+        header { border-bottom: 2px solid #d4af37; padding-bottom: 20px; margin-bottom: 30px; }
+        h1 { color: #d4af37; font-size: 32px; }
+        
+        /* Sections */
+        .section { margin-bottom: 30px; background: #1a2a47; padding: 20px; border-radius: 8px; border-left: 5px solid #d4af37; }
+        h2 { color: #d4af37; }
+        ul { list-style-type: none; padding: 0; }
+        li { margin-bottom: 10px; padding-left: 20px; position: relative; }
+        li::before { content: "✔"; color: #d4af37; position: absolute; left: 0; }
+
+        /* Footer (होम पेज वाला ही) */
+        footer { margin-top: 50px; padding: 30px; background: #050e1d; border-top: 2px solid #d4af37; text-align: center; font-size: 14px; }
     </style>
 </head>
 <body>
-    <nav>
-        <a href="index.html" class="logo">Legaledge</a>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html" style="color:var(--sea-blue)">About</a>
-            <a href="service.html">Service</a>
-            <a href="blog.html">Blog</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
-        </div>
-    </nav>
-    <div class="container">
-        <h1>About Us</h1>
-        <p>Legaledge provides seamless business registration services and customized digital assistant solutions for modern startups.</p>
-        <div class="info">
-            <p><strong>Founder:</strong> Garima Singh</p>
-            <p><strong>Contact:</strong> +91 9930016161</p>
-            <p><strong>Office:</strong> Virtual Office Support</p>
-        </div>
-    </div>
-    <footer><p style="color:#fff">&copy; 2026 treksea.in / Legaledge</p></footer>
+
+<div class="container">
+    <header>
+        <h1>About LegalEdge</h1>
+        <div style="font-weight: bold;">Giving Your Business the Competitive Edge It Deserves</div>
+    </header>
+
+    <section class="section">
+        <h2>Welcome to LegalEdge</h2>
+        <p>Your trusted digital partner for seamless business registration, legal structuring, and corporate compliance in India.</p>
+        <p>We handle the legal complexities so you can focus 100% on building and growing your business.</p>
+    </section>
+
+    <section class="section">
+        <h2>Our Mission</h2>
+        <p>"To simplify legal formalities for entrepreneurs and small business owners, making corporate incorporation transparent, affordable, and entirely stress-free."</p>
+    </section>
+
+    <section class="section">
+        <h2>What Sets Us Apart?</h2>
+        <ul>
+            <li><strong>End-to-End Online Solutions:</strong> 100% digital process, no physical office visits required.</li>
+            <li><strong>Driven by Experts:</strong> Verified team of CAs, CSs, and corporate lawyers.</li>
+            <li><strong>Transparent Pricing:</strong> Zero hidden fees, absolute honesty in costs.</li>
+            <li><strong>Speed & Accuracy:</strong> Optimized workflows for fastest turnaround time.</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>Contact:</strong> Garima Singh | 993016161 | Legaledgetreksea@gmail.com</p>
+        <p><strong>Office:</strong> Milinium Park, Seawood Station, Navi Mumbai 400706</p>
+        <p style="font-size: 12px; color: #888;">Disclaimer: We are a private consulting firm facilitating registrations. Required docs: PAN, [Aadhaar Redacted], utility bills.</p>
+    </footer>
+</div>
+
 </body>
 </html>
