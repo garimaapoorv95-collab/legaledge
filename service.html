@@ -1,85 +1,31 @@
-header-section {
-            text-align: center;
-            padding: 3rem 5%;
-            background: rgba(255, 255, 255, 0.5);
-            margin-bottom: 2rem;
-        }
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        :root { --navy: #1a2a4a; --gold: #b89b72; }
+        body { background-color: var(--navy); color: white; padding: 20px; }
+        .box { border: 2px solid var(--gold); padding: 20px; margin-bottom: 20px; border-radius: 10px; }
+        .details { display: none; background: rgba(255,255,255,0.1); padding: 10px; }
+    </style>
+</head>
+<body>
+    <a href="index.html" style="color:var(--gold);">Back to Home</a>
+    
+    <div class="box">
+        <h3>Private Limited Company</h3>
+        <button onclick="this.nextElementSibling.style.display='block'">Know More</button>
+        <div class="details">
+            <p><strong>Documents:</strong> DIN, DSC, MoA, AoA, Incorporation Certificate.</p>
+            <p><strong>Process:</strong> Name Selection -> Digital Signature -> Incorporation -> Approval.</p>
+        </div>
+    </div>
 
-        .header-section h1 {
-            font-size: 2.2rem;
-            color: var(--sea-blue);
-            margin-bottom: 0.5rem;
-        }
-
-        .header-section p {
-            font-size: 1.1rem;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        /* Services Grid Layout */
-        .services-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 5% 4rem 5%;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .service-card {
-            background: var(--white);
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            transition: transform 0.3s;
-            border: 2px solid transparent;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--sea-blue);
-        }
-
-        .service-img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            background-color: #eee;
-        }
-
-        .service-content {
-            padding: 1.5rem;
-        }
-
-        .service-content h3 {
-            font-size: 1.3rem;
-            color: var(--sea-blue);
-            margin-bottom: 0.8rem;
-            font-weight: 700;
-        }
-
-        .service-content p {
-            font-size: 0.95rem;
-            margin-bottom: 1.2rem;
-        }
-
-        /* Sub-items List for Virtual Assistant */
-        .service-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .tag {
-            background: var(--bg-pink);
-            padding: 0.3rem 0.7rem;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 600;
-        }
-
-        .btn-consult {
-            display: inline-block;
-            background: var(--sea-blue);
+    <div class="box">
+        <h3>GST Registration</h3>
+        <button onclick="this.nextElementSibling.style.display='block'">Know More</button>
+        <div class="details">
+            <p><strong>Includes:</strong> Monthly returns, Tax planning, Dedicated Manager.</p>
+        </div>
+    </div>
+</body>
+</html>
