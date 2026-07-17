@@ -2,30 +2,54 @@
 <html lang="en">
 <head>
     <style>
-        :root { --navy: #1a2a4a; --gold: #b89b72; }
-        body { background-color: var(--navy); color: white; padding: 20px; }
-        .box { border: 2px solid var(--gold); padding: 20px; margin-bottom: 20px; border-radius: 10px; }
-        .details { display: none; background: rgba(255,255,255,0.1); padding: 10px; }
+        :root { --navy: #1a2a4a; --gold: #b89b72; --white: #ffffff; }
+        body { background-color: var(--navy); color: var(--white); font-family: sans-serif; padding: 20px; }
+        .service-box { border: 2px solid var(--gold); padding: 25px; margin-bottom: 30px; border-radius: 10px; background: rgba(255,255,255,0.05); }
+        h2 { color: var(--gold); border-bottom: 2px solid var(--gold); display: inline-block; }
+        h3 { color: var(--gold); }
+        .content { margin-top: 15px; }
+        .point { margin-bottom: 10px; }
     </style>
 </head>
 <body>
-    <a href="index.html" style="color:var(--gold);">Back to Home</a>
-    
-    <div class="box">
-        <h3>Private Limited Company</h3>
-        <button onclick="this.nextElementSibling.style.display='block'">Know More</button>
-        <div class="details">
-            <p><strong>Documents:</strong> DIN, DSC, MoA, AoA, Incorporation Certificate.</p>
-            <p><strong>Process:</strong> Name Selection -> Digital Signature -> Incorporation -> Approval.</p>
+
+    <a href="index.html" style="color: var(--gold); font-weight: bold;">⬅ Back to Home</a>
+    <h1>Our Professional Services</h1>
+
+    <!-- Private Limited Service -->
+    <div class="service-box">
+        <h2>Private Limited Company</h2>
+        <div class="content">
+            <p><strong>Benefits:</strong> Corporate identity, funding eligibility, and limited liability.</p>
+            <h3>Includes:</h3>
+            <p>Certificate of Incorporation, ePAN & eTAN, AoA & MoA, DIN, Class 3 DSC, Current Account Opening, GST, ESI & PF.</p>
+            
+            <h3>Registration Process:</h3>
+            <div class="point">• <strong>Choose Company Name:</strong> Select a unique name.</div>
+            <div class="point">• <strong>Digital Signature:</strong> Class 3 DSC for secure filing.</div>
+            <div class="point">• <strong>MoA & AoA:</strong> Prepare essential charter documents.</div>
+            <div class="point">• <strong>Incorporation Form:</strong> File SPICe+ forms with ROC.</div>
+            <div class="point">• <strong>Approval:</strong> Receive DIN and Incorporation Certificate.</div>
         </div>
     </div>
 
-    <div class="box">
-        <h3>GST Registration</h3>
-        <button onclick="this.nextElementSibling.style.display='block'">Know More</button>
-        <div class="details">
-            <p><strong>Includes:</strong> Monthly returns, Tax planning, Dedicated Manager.</p>
+    <!-- GST Service -->
+    <div class="service-box">
+        <h2>GST Registration & Compliance</h2>
+        <div class="content">
+            <h3>Process:</h3>
+            <p>Registration, Monthly GST Return Filing, Dedicated Manager, and Tax Planning.</p>
+            <p><strong>Eligibility:</strong> Business turnover exceeding threshold limits or mandatory registration requirements.</p>
         </div>
     </div>
+
+    <!-- Terms & Conditions Section -->
+    <div class="service-box" style="background: var(--white); color: var(--navy);">
+        <h2>Terms and Conditions</h2>
+        <p><strong>Services Overview:</strong> We offer company registration, business licenses, and tax assistance.</p>
+        <p><strong>Confidentiality:</strong> Your data is protected and used only for service delivery.</p>
+        <p><strong>Limitation of Liability:</strong> Total liability is limited to the fees paid by the client.</p>
+    </div>
+
 </body>
 </html>
