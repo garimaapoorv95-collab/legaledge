@@ -1,70 +1,65 @@
-        <!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Our Services - Online Vacations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - LegalEdge</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 20px; }
-        .container { max-width: 1000px; margin: auto; }
-        .service-card { background: #f9f9f9; padding: 20px; border-left: 5px solid #007bff; margin-bottom: 20px; border-radius: 5px; }
-        h2 { color: #2c3e50; border-bottom: 2px solid #007bff; padding-bottom: 10px; }
-        h3 { color: #007bff; margin-top: 0; }
-        .faq-item { background: #fff; padding: 15px; border: 1px solid #ddd; margin-bottom: 10px; border-radius: 5px; }
-        .footer-note { font-size: 0.8rem; color: #777; text-align: center; margin-top: 40px; }
+        body { font-family: sans-serif; margin: 0; background-color: #0c1c35; color: #ffffff; }
+        .container { max-width: 900px; margin: auto; padding: 20px; }
+        
+        /* Header */
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 2px solid #d4af37; }
+        .menu-btn { font-size: 30px; cursor: pointer; color: #d4af37; }
+        
+        /* Service Details Box */
+        .service-box { background: #1a2a47; padding: 25px; border-radius: 8px; border-left: 5px solid #d4af37; margin-bottom: 30px; }
+        h2 { color: #d4af37; }
+        h3 { color: #d4af37; margin-top: 20px; }
+        
+        /* Footer */
+        footer { margin-top: 50px; padding: 30px; background: #050e1d; border-top: 2px solid #d4af37; text-align: center; font-size: 14px; }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h2>Corporate Registration (India)</h2>
-    <div class="service-card">
-        <h3>Private Limited Company</h3>
-        <p>Best for startups seeking investor funding, offering limited liability.</p>
-    </div>
-    <div class="service-card">
-        <h3>Public Limited</h3>
-        <p>Scalable business structure for larger enterprises.</p>
-    </div>
-    <div class="service-card">
-        <h3>Sole Proprietorship</h3>
-        <p>Ideal for individual business owners with direct control.</p>
-    </div>
-    <div class="service-card">
-        <h3>LLP (Limited Liability Partnership)</h3>
-        <p>A flexible partnership structure with limited liability protections.</p>
-    </div>
-    <div class="service-card">
-        <h3>OPC (One Person Company)</h3>
-        <p>Ideal for entrepreneurs who want to run a company alone with limited liability.</p>
-    </div>
-    <div class="service-card">
-        <h3>Partnership Firm</h3>
-        <p>Traditional business structure for co-founders.</p>
+    <header>
+        <div style="font-weight: bold; font-size: 20px;">LegalEdge Services</div>
+        <div class="menu-btn" onclick="window.location.href='index.html'">☰</div>
+    </header>
+
+    <!-- Example: Private Limited Company Detail -->
+    <div class="service-box" id="pvt-ltd">
+        <h2>Private Limited Company</h2>
+        <p><strong>Overview:</strong> A separate legal entity offering limited liability, ideal for startups and scaling businesses.</p>
+        
+        <h3>Eligibility:</h3>
+        <p>Minimum 2 directors, one resident in India, unique company name.</p>
+        
+        <h3>Documents Required:</h3>
+        <p>PAN Card, [Aadhaar Redacted], Latest Utility Bill, Bank Statement, Passport size photo.</p>
+        
+        <h3>Process:</h3>
+        <p>1. DSC/DIN setup -> 2. Name Approval -> 3. Filing SPICe+ forms -> 4. Certificate of Incorporation.</p>
+        
+        <h3>Price:</h3>
+        <p>Starting at ₹XXXX/- (Includes Government Fees).</p>
     </div>
 
-    <h2>Compliance & Growth Services</h2>
-    <ul>
-        <li><strong>GST Registration:</strong> Mandatory if turnover exceeds ₹20 lakh (services) or ₹40 lakh (goods).</li>
-        <li><strong>MSME Registration:</strong> Unlock government subsidies and credit support.</li>
-        <li><strong>Trademark:</strong> Protect your brand identity.</li>
-        <li><strong>ISO Certificate:</strong> Ensure international quality standards.</li>
-        <li><strong>Import Export Code (IEC):</strong> Necessary for cross-border trade.</li>
-    </ul>
-
-    <h2>Frequently Asked Questions (FAQ)</h2>
-    <div class="faq-item">
-        <p><strong>Q: What is the minimum capital required for a Private Limited Company?</strong><br>
-        A: There is no minimum capital requirement.</p>
-    </div>
-    <div class="faq-item">
-        <p><strong>Q: How long does the registration process take?</strong><br>
-        A: It typically takes 7-15 working days.</p>
+    <!-- आप इसी तरह बाकी सर्विस के बॉक्स नीचे बना सकती हैं -->
+    <div class="service-box" id="gst">
+        <h2>GST Registration</h2>
+        <p><strong>Overview:</strong> Mandatory registration for businesses with specific turnover limits.</p>
+        <p><strong>Price:</strong> ₹XXXX/-</p>
     </div>
 
-    <div class="footer-note">
-        <p><strong>Terms & Conditions:</strong> All professional fees are exclusive of government stamp duty and DSC costs. Documents must be authentic.</p>
-    </div>
+    <footer>
+        <p><strong>Contact:</strong> Garima Singh | 993016161 | Legaledgetreksea@gmail.com</p>
+        <p><strong>Office:</strong> Milinium Park, Seawood Station, Navi Mumbai 400706</p>
+        <p style="font-size: 12px; color: #888;">Disclaimer: We are a private consulting firm. Required docs: PAN, [Aadhaar Redacted], utility bills.</p>
+    </footer>
 </div>
 
 </body>
-</html>
+</html>        
